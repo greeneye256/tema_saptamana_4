@@ -3,14 +3,18 @@ package simedia;
 public class Exercitiul2 {
 
     public static void main(String[] args) {
-        int[] arrayNumbers = {1,2,4,45,43,23,867,4352,12,123,432,1,23,4,};
-        int maxim = arrayNumbers[0];
-        for (int i = 1; i < arrayNumbers.length; i++) {
-            if (arrayNumbers[i]>maxim){
-                maxim = arrayNumbers[i];
+
+        System.out.println(maxOfArray(1,3,4,6343,354,234,87684,6476,65357,88673,35763,24,26,526,767));
+
+    }
+    public static int maxOfArray(int ...array){
+        int maxim = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i]>maxim){
+                maxim = array[i];
             }
         }
-        System.out.println(maxim);
+        return maxim;
     }
 
 }
